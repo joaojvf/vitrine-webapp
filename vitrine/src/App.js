@@ -1,11 +1,17 @@
 import React from 'react';
+import { HashRouter } from "react-router-dom";
 
-function App() {
-  return (
-    <>
-      <h1>Hello World</h1>
-    </>
-  );
+import Navbar from './components/Navbar';
+import Routes from './routes';
+
+class App extends React.Component {
+  render() {
+    return (
+      <HashRouter>
+        <Navbar/>
+        <Routes/>
+    </HashRouter>
+    );
+  }
 }
-
 export default App;
